@@ -1,0 +1,61 @@
+header img{
+  width: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none
+
+}
+
+ul li{
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+main div.animal {
+  width: calc(33.3% - 10px);
+  margin: 5px auto;
+  border: solid 1px;
+
+}
+
+main .animal img{
+  width: 100%;
+}
+
+main h1{
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  main div.animal {
+    width: calc(50% - 10px);
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}

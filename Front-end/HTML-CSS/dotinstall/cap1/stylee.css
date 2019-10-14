@@ -1,0 +1,180 @@
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+}
+
+header{
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+  padding-top: 64px;
+}
+
+
+header h1,
+header p{
+  margin: 0;
+  text-align: center;
+}
+
+header img{
+  width: 280px;
+  vertical-align: bottom;
+
+}
+
+.btn{
+  text-decoration: none;
+  background: #fff;
+  color: orange;
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  margin: 40px auto 48px;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+
+.member li{
+  list-style: none;
+}
+
+.features img{
+  width: 100%;
+}
+
+.features > h1{
+  text-align: center;
+  margin: 100px;
+  font-weight: normal;
+}
+
+.features .container {
+  margin: 0 32px;
+}
+
+/* .container img{
+  margin: 0 40px;
+} */
+
+.container p{
+  line-height: 1.8;
+}
+
+.features section{
+  padding-bottom: 64px;
+}
+
+
+.member{
+  text-align: center;
+  background-color: gainsboro;
+  padding-top: 60px;
+}
+
+.member h1{
+  margin-bottom: 80px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.member img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.member h2{
+  font-size: 16px;
+}
+
+.member p{
+  /* margin-bottom: 100px; */
+}
+
+
+.last {
+  text-align: center;
+  background-color: orange;
+  padding-bottom: 40px;
+}
+
+.last h1{
+  margin:0;
+  color: white;
+  font-weight: normal;
+  padding-top: 70px ;
+}
+
+.last btn{
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+footer{
+  background: gainsboro;
+  color: gray;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* footer p{
+  margin:0;
+  padding: 60px 0;
+} */
+
+@media (min-width: 800px){
+  header .container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+  header .info{
+    width: 60%;
+    align-self: center;
+  }
+  header .pic{
+    width: 40%;
+  }
+
+.features .container{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.features section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .pic{
+  width: 50%;
+}
+
+.features .info{
+  width: calc(50% - 32px);
+  /* margin-left: 30px; */
+}
+
+.features section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.member ul{
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member li{
+  width: 250px;
+  list-style: none;
+}
+
+}
