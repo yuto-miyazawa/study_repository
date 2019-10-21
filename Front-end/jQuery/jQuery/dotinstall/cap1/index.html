@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>jQueryの練習</title>
+
+    <style>
+      .myStyle{
+        border: 5px solid green;
+        font-size: 48px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <p>jQueryの練習</p>
+    <a href="http://google.com">google</a>
+ 
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+      // $(document).ready(function() {
+
+        $(function(){
+          // $('p').css('color','red').css('background','blue');
+          // console.log($('p').css('color'));
+
+          console.log($('a').attr('href'));
+          $('a').attr('href','http://google.co.jp')
+      });
+    </script>
+</body>
+</html>
