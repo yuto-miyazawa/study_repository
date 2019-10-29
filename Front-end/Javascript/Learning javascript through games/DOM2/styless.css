@@ -1,0 +1,9 @@
+#board{
+  background-color: black;
+}
+
+td.cell{
+  background-color: green;
+  width:30px;
+  height: 30px;
+}
