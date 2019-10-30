@@ -7,12 +7,12 @@ var tiles = [];
 function init(){ // 2
   var tr = document.getElementById("table");  // 3
 
-  for (var i = 0; i<4 ;i++ ){   // 4
+  for (var i = 0; i<5 ;i++ ){   // 4
     var tr = document.createElement("tr");  // 5
     
-    for (var j = 0;j<4; j++ ){   // 6
+    for (var j = 0;j<5; j++ ){   // 6
       var td =document.createElement("td");   // 7
-      var index = i * 4 + j;
+      var index = i * 5 + j;
       td.className = "tile";
       td.index = index;
       td.value = index;
@@ -25,20 +25,20 @@ function init(){ // 2
   }
 
   for (var i = 0; i < 1000; i++){
-    click({ srcElement: {index: Math.floor(Math.random() * 16)}})
+    click({ srcElement: {index: Math.floor(Math.random() * 25)}})
   }
 }
 
 function click(e){   // 9
   var i = e.srcElement.index;   // 10
 
-  if (i-4 >= 0 && tiles[i - 4].value == 0){   // 11s
-    swap(i,i-4);
-  } else if (i+4 < 16 && tiles[i+4].value == 0){
-    swap(i,i+4);
-  } else if (i % 4 != 0 && tiles[i - 1].value == 0){
+  if (i-5 >= 0 && tiles[i - 5].value == 0){   // 11s
+    swap(i,i-5);
+  } else if (i+5 < 25 && tiles[i+5].value == 0){
+    swap(i,i+5);
+  } else if (i % 5 != 0 && tiles[i - 1].value == 0){
     swap(i,i - 1);
-  } else if (i % 4 !=3 && tiles[i + 1].value == 0){
+  } else if (i % 5 !=4 && tiles[i + 1].value == 0){
     swap(i,i+1);
   }   // 11e
 }
