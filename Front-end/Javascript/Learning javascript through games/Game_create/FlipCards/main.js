@@ -27,7 +27,9 @@ function init(){  // 5
   var table = document.getElementById("table");
 
   var cards = [];      // 6s
-  for (var i=1; i <=10; i++ ){
+  for (var i=1; i <=13; i++ ){
+    cards.push(i);
+    cards.push(i);
     cards.push(i);
     cards.push(i);
     }
@@ -36,10 +38,10 @@ function init(){  // 5
 
     for (var i=0; i < 4; i++){   // 7
       var tr = document.createElement("tr");
-      for (var j=0; j < 5; j++){
+      for (var j=0; j < 13; j++){
         var td = document.createElement("td");
         td.className = "card back";
-        td.number = cards[i * 5 + j];
+        td.number = cards[i * 13 + j];
         td.onclick = flip;
         tr.appendChild(td);
       }
