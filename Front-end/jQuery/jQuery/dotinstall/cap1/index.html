@@ -14,20 +14,29 @@
   
   <body>
     <p>jQueryの練習</p>
-    <a href="http://google.com">google</a>
- 
+
+   <p>
+     <input type="text" name="name" id="name">
+     <input type="button" id="greet" value="Greet!">
+   </p>
+    <div id="result"></div>
+
+
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
       // $(document).ready(function() {
 
         $(function(){
-          // $('p').css('color','red').css('background','blue');
-          // console.log($('p').css('color'));
-
-          console.log($('a').attr('href'));
-          $('a').attr('href','http://google.co.jp')
-      });
+          $('#greet').click(function(){
+            $.get('greet.php' , {
+              name: $('#name').val()
+            },function(data){
+              $('#result').html(data.message + data.length );
+            });
+          });
+        });
+          
     </script>
 </body>
 </html>
