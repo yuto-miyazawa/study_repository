@@ -1,0 +1,64 @@
+@import "settings";
+@import "mixin";
+
+
+
+// #main{
+//   width: 90%;
+//   p{
+//     font-size: $basefont;
+//     color: $color_base;
+//     // ２通りの書き方
+//     background: url($imgDir + "bg.png");
+//     background: url("#{$imgDir}bg.png");
+
+//   &:hover{
+//     color:green;
+//   }
+
+//   }
+// }
+
+#main {
+  // @if $debugmode == true {
+  //   color: red;
+  // } @else{
+  //   color: green;
+  // }
+
+    p{
+      font-size:$basefont;
+    }
+
+  @if $basefont > 10 {
+    color: blue;
+  } @else {
+    color:yellow;
+  }
+}
+
+.label{
+  font-size:$basefont;
+  @include round;
+}
+
+
+.msg{
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 0;
+  color:  white;
+}
+
+.error{
+  @extend .msg;
+  background-color: red;
+}
+
+.wrrnig{
+  @extend .msg;
+  background-color: yellow;
+}
+
+
+
