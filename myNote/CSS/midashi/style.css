@@ -1,0 +1,100 @@
+.ex{
+  font-size: 30px;
+  margin: 0 400px;
+}
+
+.ex1{
+  margin-bottom: 80px;
+  margin-top: 80px;
+  border-bottom: solid 3px #3F51B5;
+}
+
+.ex2{
+  margin-bottom: 80px;
+  border-bottom: dashed 2px #3F51B5;
+}
+
+.ex3{
+  margin-bottom: 80px;
+  background: #3F51B5;
+  padding: 0.5em;
+  color:white;
+}
+
+.ex4{
+  margin-bottom: 80px;
+  background: #7385E9;
+  padding: 0.5em;
+  color:white;
+  border-bottom: solid 3px #516ab6;/*下線*/
+}
+
+.ex5{
+  margin-bottom: 80px;
+  color: #494949;/*文字色*/
+  background: transparent;
+  border-left: solid 5px #516ab6;/*左線*/
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+}
+
+.ex6{
+  margin-bottom: 80px;
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  width:182px;
+}
+
+.ex7{
+  margin-bottom: 80px;
+  background: linear-gradient(transparent 1%, #a7d6ff 50%);
+  width:182px;
+}
+
+.ex8{
+  margin-bottom: 80px;
+  position: relative;
+  padding: 0.3em;
+  background: #e0edff;
+}
+
+.ex8:after{
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+.ex9{
+  margin-bottom: 80px;
+  border-bottom: solid 3px #cce4ff;
+  position: relative;
+}
+
+.ex9:after{
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #5472cd;
+  bottom: -3px;
+  width: 20%;
+}
+
+.ex10{
+  margin-bottom: 80px;
+  position: relative;
+  padding-left: 1.2em;/*アイコン分のスペース*/
+  line-height: 1.4;
+}
+
+.ex10:before{
+  font-family: FontAwesome;
+  content: "\f00c";/*アイコンのユニコード*/
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: 0;/*アイコンの位置*/
+  color: #5ab9ff; /*アイコン色*/
+}

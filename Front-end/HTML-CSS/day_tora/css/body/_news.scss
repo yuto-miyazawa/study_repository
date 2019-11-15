@@ -1,0 +1,109 @@
+// import
+@import "setting";
+@import "maxin";
+
+
+.news{
+  top: 1830px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  padding-left: 140px;
+  padding-right: 120px;
+
+  @include mq('sp'){
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+
+.topic-title{
+  padding-top: 68px;
+
+  h1{
+    font: Bold 60px/96px Yu Gothic;
+    letter-spacing: 0;
+    color: #333333;
+    opacity: 1;
+    margin-bottom: 44px;
+  }
+
+  hr{
+    border: 2px solid #3F51B5;
+    opacity: 1;
+    width: 76px;
+    margin-bottom: 44px;
+  }
+}
+
+.news-left{
+
+  time{
+  text-align: left;
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+  }
+
+  a{
+    background: #666666;
+    padding: 0.5em 1em 0.5em 1em;
+    color:white;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    opacity: 1;
+    margin-left: 70px;
+
+    @include mq('tab'){
+      margin-left: 30px;
+    }
+
+    @include mq('sp'){
+      margin-left: 15px;
+    }
+  }
+
+  @include mq('sp'){
+    margin-bottom: 20px;
+  }
+
+  @include mq('tab'){
+    margin-bottom: 20px;
+  }
+
+}
+
+.news-border{
+border-bottom: 1px solid #707070;
+opacity: 1;
+}
+
+.lb2{
+  a{
+    @extend .news-left;
+    background:#3F51B5;
+  }
+}
+
+.lb3{
+  a{
+    @extend .news-left;
+    background:#E81919;
+  }
+}
+
+.news-more{
+  text-align: center;
+
+  a{
+    font: Bold 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #E81919;
+  opacity: 1;
+  }
+}

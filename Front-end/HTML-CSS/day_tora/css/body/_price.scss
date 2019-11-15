@@ -1,0 +1,112 @@
+// import
+@import "setting";
+@import "maxin";
+
+
+.price{
+  top: 664px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  padding-left: 139px;
+  padding-right: 139px;
+  background: #efefef 0% 0% no-repeat padding-box;
+  padding-bottom: 112px;
+
+  @include mq('sp'){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include mq('tab'){
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+
+.price-item{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+
+  @include mq('tab'){
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+}
+
+
+
+.price-left{
+
+  img{
+    width:360px;
+    height: 300px;
+  }
+
+  @include mq('tab'){
+    margin-bottom: 30px;
+  }
+}
+
+
+table{
+  border: 1px solid #707070;
+  border-collapse: collapse;
+  
+  td{
+    padding: 3px;
+    width: 224px;
+    height: 48px;
+    border: 1px solid #707070;
+    border-collapse: collapse;
+  }
+
+  th{
+    padding: 3px;
+    width: 224px;
+    height: 48px;
+    border: 1px solid #707070;
+    border-collapse: collapse;
+  }
+
+}
+
+.ro{
+  width: 160px;
+  background: #999999;
+  font: Bold 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+.co{
+  background: #999999;
+  font: Bold 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+.tx{
+  background: #FFFFFF;
+  text-align: right;
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
+
+.price-text{
+  padding-top: 30px;
+  text-align: left;
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
