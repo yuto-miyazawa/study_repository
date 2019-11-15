@@ -1,2 +1,2 @@
 # About
-勉強した内容をメモするrepository
+個人勉強用
