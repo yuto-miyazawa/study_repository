@@ -456,6 +456,7 @@ table th {
   opacity: 1;
   padding-left: 283px;
   padding-right: 283px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -532,6 +533,458 @@ table th {
 
 .map-btn a {
   font: Bold 20px/32px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.text-test, .text-contact {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  width: 100%;
+}
+
+.text-test:focus, .text-contact:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-shadow: none;
+  outline: none;
+}
+
+.textarea-text, .textarea-contact {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  height: 100px;
+  padding: 0.4em 0.8em;
+  width: 100%;
+}
+
+.textarea-text:focus, .textarea-contact:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-shadow: none;
+  outline: none;
+}
+
+.radio-test, .radio-contact {
+  display: none;
+}
+
+.radio-test + span, .radio-contact + span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.2em 0;
+  padding: 0 0 0 1.2em;
+  position: relative;
+}
+
+.radio-test + span::before, .radio-contact + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+}
+
+.radio-test + span::after, .radio-contact + span::after {
+  -webkit-transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.32);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 4px;
+  opacity: 0;
+  padding: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  width: 8px;
+}
+
+.radio-test:checked + span::after, .radio-contact:checked + span::after {
+  opacity: 1;
+}
+
+.check-test {
+  display: none;
+}
+
+.check-test + a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.2em 0;
+  padding: 0 0 0 1.2em;
+  position: relative;
+}
+
+.check-test + a::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  content: "";
+  display: block;
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+}
+
+.check-test + a::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.32);
+  border-left: 3px solid rgba(0, 0, 0, 0.32);
+  content: "";
+  display: block;
+  height: 0.6em;
+  left: 0;
+  margin-top: -0.2em;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: all 0.3s ease 0s;
+  width: 1em;
+}
+
+.check-test:checked + a::after {
+  opacity: 1;
+}
+
+.select-test, .select-contact {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  width: 100%;
+}
+
+.select-test::-ms-expand, .select-contact::-ms-expand {
+  display: none;
+}
+
+.select-test:focus, .select-contact:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-shadow: none;
+  outline: none;
+}
+
+.submit-test {
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0.32);
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 0 1em;
+  padding: 0.6em 2em;
+  text-decoration: none;
+}
+
+.submit-test:hover,
+.submit-test:focus {
+  outline: none;
+}
+
+.submit-test::-moz-foucus-inner {
+  border: none;
+  padding: 0;
+}
+
+.contact {
+  top: 1258px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  padding-left: 283px;
+  padding-right: 283px;
+  background: #efefef 0% 0% no-repeat padding-box;
+  padding-bottom: 112px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1179px) {
+  .contact {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.contact-sec {
+  height: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 2px;
+}
+
+@media screen and (max-width: 1179px) {
+  .contact-row {
+    flex-direction: column;
+  }
+}
+
+.contact-row h4 {
+  font: Bold 18px/29px Yu Gothic;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
+
+.contact-row p {
+  background: #E81919 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  font: Bold 14px/22px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  width: 45px;
+  height: 22px;
+}
+
+.contact-right {
+  width: calc(90% - 6rem);
+}
+
+@media screen and (max-width: 1179px) {
+  .contact-right {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+.text-contact {
+  height: 100%;
+}
+
+.select-contact {
+  height: 100%;
+}
+
+.textarea-contact {
+  height: 240px;
+}
+
+.contact-radio {
+  text-align-last: left;
+}
+
+.contact-radio span {
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
+
+.contact-check {
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
+
+.contact-check input {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-btn {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.contact-btn button {
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px;
+  border-radius: 12px;
+  opacity: 1;
+  width: 261px;
+  height: 56px;
+}
+
+.contact-btn a {
+  font: Bold 22px/36px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.contact-in {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1179px) {
+  .contact-in {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  .contact-in-right {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+}
+
+.contact-select {
+  text-align-last: left;
+}
+
+@media screen and (max-width: 1179px) {
+  .contact-select {
+    height: 40px;
+  }
+  .contact-select h4 {
+    margin-bottom: 0;
+  }
+}
+
+.contact-area-lef {
+  text-align-last: left;
+}
+
+@media screen and (max-width: 1179px) {
+  .contact-area-lef {
+    height: 40px;
+  }
+  .contact-area-lef h4 {
+    margin-bottom: 0;
+  }
+}
+
+.contact-area-right {
+  height: 100%;
+}
+
+footer {
+  background: transparent linear-gradient(180deg, #666666 0%, #333333 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 83px 152px;
+}
+
+.footer-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-sec p {
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.footer-inc {
+  width: 33.33333%;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 39px;
+  background: transparent url("../img/logo.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+.footer-nav {
+  width: 33.33333%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav a {
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.footer-sns {
+  width: 33.33333%;
+  text-align: center;
+}
+
+.footer-sns i {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.fa-facebook {
+  color: #FFFFFF;
+}
+
+.fa-twitter {
+  color: #FFFFFF;
+}
+
+.fa-instagram {
+  color: #FFFFFF;
+}
+
+.copy-light {
+  text-align: center;
+  padding-bottom: 31px;
+  padding-top: 91px;
+}
+
+.copy-light p {
+  font: Regular 14px/22px Yu Gothic;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
