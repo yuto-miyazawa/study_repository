@@ -52,14 +52,16 @@
 }
 
 .map-left{
-  font: 16px Yu Gothic;
+  // font: 16px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 0.5;
 }
 
 .map-light{
-  font: 16px Yu Gothic;
+  // font: 16px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 0.5;
@@ -77,12 +79,23 @@
     // box-shadow: 0px 3px 6px #00000029;
     border-radius: 12px;
     opacity: 1;
+
+    &:hover{
+      opacity: 0.8;
+    }
   }
 
   a{
-    font: Bold 20px/32px Yu Gothic;
+    // font: Bold 20px/32px Yu Gothic;
+    font-size: 20px;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
+    text-decoration: none; //下線
+
+    &:hover{
+      color: #FFFFFF;
+      text-decoration: none; //下線
+    }
   }
 }

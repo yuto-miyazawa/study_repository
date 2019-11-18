@@ -6,14 +6,27 @@ footer {
   padding: 83px 152px 0 152px;
 }
 
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 60px 70px 0 100px;
+  }
+}
+
 .footer-sec {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1179px) {
+  .footer-sec {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .footer-sec p {
-  font: Regular 16px/26px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
@@ -21,6 +34,13 @@ footer {
 
 .footer-inc {
   width: 33.33333%;
+}
+
+@media screen and (max-width: 1179px) {
+  .footer-inc {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .footer-logo {
@@ -31,14 +51,28 @@ footer {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1179px) {
+  .footer-logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
 .footer-nav {
   width: 33.33333%;
   display: flex;
   justify-content: space-around;
 }
 
+@media screen and (max-width: 1179px) {
+  .footer-nav {
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+}
+
 .footer-nav a {
-  font: Regular 16px/26px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
@@ -47,6 +81,13 @@ footer {
 .footer-sns {
   width: 33.33333%;
   text-align: center;
+}
+
+@media screen and (max-width: 1179px) {
+  .footer-sns {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
 .footer-sns i {
@@ -74,9 +115,30 @@ footer {
   padding-top: 91px;
 }
 
+@media screen and (max-width: 1179px) {
+  .copy-light {
+    padding-top: 35px;
+  }
+}
+
 .copy-light p {
-  font: Regular 14px/22px Yu Gothic;
+  font-size: 14px;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.pagetop a {
+  display: block;
+  text-decoration: none;
+}
+
+.pagetop:hover {
+  opacity: 0.85;
 }

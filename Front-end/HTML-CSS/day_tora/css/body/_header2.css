@@ -45,14 +45,18 @@
   opacity: 1;
 }
 
-.header-menu .nav-link {
+.header-menu li:hover {
+  border-bottom: solid 3px red;
+}
+
+.nav-link {
   font: Regular 16px/26px Yu Gothic;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
 }
 
-.header-menu .nav-link:hover {
+.nav-link:hover {
   color: gray;
 }
 
@@ -68,7 +72,8 @@
 }
 
 .main-img h1 {
-  font: Bold 68px/108px Yu Gothic;
+  font-size: 68px;
+  font-weight: bold;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
@@ -81,7 +86,7 @@
 }
 
 .main-img h2 {
-  font: Bold 38px/61px Yu Gothic;
+  font-size: 38px;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
@@ -91,14 +96,14 @@
   background: #3F51B5 0% 0% no-repeat padding-box;
   border-radius: 12px;
   opacity: 1;
-  font: Bold 38px/61px Yu Gothic;
+  font-size: 38px;
   letter-spacing: 0;
   color: #FFFFFF;
 }
 
 .main-img button a {
   opacity: 1;
-  font: Bold 38px/61px Yu Gothic;
+  font-size: 38px;
   letter-spacing: 0;
   color: #FFFFFF;
 }
@@ -116,5 +121,4 @@
   top: 249px;
   z-index: 1;
   color: white;
-  font-family: 'Playfair Display', serif;
 }

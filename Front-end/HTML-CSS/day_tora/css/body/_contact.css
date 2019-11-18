@@ -89,11 +89,11 @@
   opacity: 1;
 }
 
-.check-test {
+.check-test, .check-pribacy {
   display: none;
 }
 
-.check-test + a {
+.check-test + a, .check-pribacy + a {
   cursor: pointer;
   display: inline-block;
   margin: 0 0.2em 0;
@@ -101,7 +101,7 @@
   position: relative;
 }
 
-.check-test + a::before {
+.check-test + a::before, .check-pribacy + a::before {
   -webkit-transform: translateY(-50%);
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.16);
@@ -116,7 +116,7 @@
   width: 1em;
 }
 
-.check-test + a::after {
+.check-test + a::after, .check-pribacy + a::after {
   -webkit-transform: translateY(-50%) rotate(-45deg);
   border-bottom: 3px solid rgba(0, 0, 0, 0.32);
   border-left: 3px solid rgba(0, 0, 0, 0.32);
@@ -133,7 +133,7 @@
   width: 1em;
 }
 
-.check-test:checked + a::after {
+.check-test:checked + a::after, .check-pribacy:checked + a::after {
   opacity: 1;
 }
 
@@ -312,11 +312,21 @@
   height: 56px;
 }
 
+.contact-btn button:hover {
+  opacity: 0.8;
+}
+
 .contact-btn a {
   font: Bold 22px/36px Yu Gothic;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
+  text-decoration: none;
+}
+
+.contact-btn a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .contact-in {

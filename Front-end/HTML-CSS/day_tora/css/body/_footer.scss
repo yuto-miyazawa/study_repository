@@ -8,7 +8,11 @@ footer{
   opacity: 1;
   width: 100%;
   height:100%;
-  // padding: 83px 152px 0 152px;
+  padding: 83px 152px 0 152px;
+  
+  @include mq ('sp'){
+    padding: 60px 70px 0 100px;
+  }
 }
 
 .footer-sec{
@@ -16,9 +20,15 @@ footer{
   flex-wrap: wrap;
   justify-content:space-between;
 
+  @include mq('tab'){
+    flex-direction: column;
+    text-align: center;
+  }
+
 
   p{
-    font: Regular 16px/26px Yu Gothic;
+    // font: Regular 16px/26px Yu Gothic;
+    font-size: 16px;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
@@ -27,6 +37,11 @@ footer{
 
 .footer-inc{
   width: 33.33333%;
+
+  @include mq('tab'){
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .footer-logo{
@@ -35,6 +50,11 @@ footer{
   background: transparent url($imgDir) 0% 0% no-repeat padding-box;
   opacity: 1;
   margin-bottom: 30px;
+
+  @include mq('tab'){
+    margin:0 auto;
+    margin-bottom: 10px;
+  }
 }
 
 .footer-nav{
@@ -42,8 +62,14 @@ footer{
   display: flex;
   justify-content: space-around;
 
+  @include mq('tab'){
+    width:70%;
+    margin: 0 auto 20px;
+  }
+
   a{
-    font: Regular 16px/26px Yu Gothic;
+    // font: Regular 16px/26px Yu Gothic;
+    font-size: 16px;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
@@ -53,6 +79,11 @@ footer{
 .footer-sns{  
   width:33.33333%;
   text-align: center;
+
+  @include mq('tab'){
+    width: 100%;
+    margin-top: 15px;
+  }
 
   i{
     width:30px;
@@ -77,11 +108,34 @@ footer{
   text-align: center;
   padding-bottom: 31px;
   padding-top: 91px;
+  
+  @include mq('tab'){
+    padding-top: 35px;
+  }
 
   p{
-    font: Regular 14px/22px Yu Gothic;
+    // font: Regular 14px/22px Yu Gothic;
+    font-size: 14px;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
   }
+}
+
+.pagetop
+    {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    }
+ 
+.pagetop a
+    {
+    display: block;
+    text-decoration: none;
+    }
+ 
+.pagetop:hover
+{
+    opacity: 0.85 ;
 }

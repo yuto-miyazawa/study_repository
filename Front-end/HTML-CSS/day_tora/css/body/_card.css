@@ -28,7 +28,8 @@
 }
 
 .card-title h1, .news-title h1 {
-  font: Bold 60px/96px Yu Gothic;
+  font-size: 60px;
+  font-weight: bold;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
@@ -98,18 +99,17 @@
 
 .item-text h2 {
   text-align: left;
-  font: Bold 20px/24px Yu Gothic;
+  font-size: 20px;
+  font-weight: bold;
   letter-spacing: 0;
   color: #6F7579;
   opacity: 1;
-  font-family: Yu 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-text p {
   text-align: left;
-  font: Bold 16px/24px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #6F7579;
   opacity: 1;
-  font-family: Yu 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

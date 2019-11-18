@@ -51,20 +51,28 @@
   justify-content: end;
   opacity: 1;
 
-  .nav-link{
-    // top: 40px;
-    // left: 882px;
-    // width: 35px;
-    // height: 21px;
-    // text-align: center;
-    font: Regular 16px/26px Yu Gothic;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    opacity: 1;
-
+  li{
+    
     &:hover{
-      color: gray;
+      border-bottom: solid 3px red;
     }
+  }
+}
+
+.nav-link{
+  // top: 40px;
+  // left: 882px;
+  // width: 35px;
+  // height: 21px;
+  // text-align: center;
+  font: Regular 16px/26px Yu Gothic;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  opacity: 1;
+
+
+  &:hover{
+    color: gray;
   }
 }
 
@@ -87,7 +95,8 @@ h1{
 // left: 309px;
 // width: 748px;
 // height: 87px;
-font: Bold 68px/108px Yu Gothic;
+font-size: 68px;
+font-weight: bold;
 letter-spacing: 0;
 color: #333333;
 opacity: 1;
@@ -103,7 +112,8 @@ h2{
 // left: 512px;
 // width: 342px;
 // height: 49px;
-font: Bold 38px/61px Yu Gothic;
+// font: Bold 38px/61px Yu Gothic;
+font-size: 38px;
 letter-spacing: 0;
 color: #333333;
 opacity: 1;
@@ -119,13 +129,16 @@ background: #3F51B5 0% 0% no-repeat padding-box;
 // box-shadow: 0px 3px 6px #00000029;
 border-radius: 12px;
 opacity: 1;
-font: Bold 38px/61px Yu Gothic;
+// font: Bold 38px/61px Yu Gothic;
+font-size: 38px;
 letter-spacing: 0;
 color: #FFFFFF;
 
 a  {
   opacity: 1;
-font: Bold 38px/61px Yu Gothic;
+// font: Bold 38px/61px Yu Gothic;
+font-size: 38px;
+
 letter-spacing: 0;
 color: #FFFFFF;
 
@@ -144,5 +157,5 @@ color: #FFFFFF;
   z-index: 1;
   color: white;
   // text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
+  // font-family: 'Playfair Display', serif;
 }

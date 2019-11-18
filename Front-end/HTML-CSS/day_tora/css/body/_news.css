@@ -20,7 +20,7 @@
 }
 
 .topic-title h1 {
-  font: Bold 60px/96px Yu Gothic;
+  font: Bold 60px;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
@@ -64,6 +64,12 @@
   .news-left a, .lb2 a a, .lb3 a a {
     margin-left: 15px;
   }
+}
+
+.news-left a:hover, .lb2 a a:hover, .lb3 a a:hover {
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {

@@ -44,6 +44,7 @@
 
   h4{
     font: Bold 18px/29px Yu Gothic;
+    // font-size: 18px;
     letter-spacing: 0;
     color: #333333;
     opacity: 1;
@@ -54,6 +55,7 @@
     border-radius: 12px;
     opacity: 1;
     font: Bold 14px/22px Yu Gothic;
+    // font-size: 14px;
     letter-spacing: 0;
     color: #FFFFFF;
     margin-bottom: 0;
@@ -97,6 +99,7 @@
   
   span{
     font: Regular 16px/26px Yu Gothic;
+    // font-size: 16px;
     letter-spacing: 0;
     color: #333333;
     opacity: 1;
@@ -106,6 +109,7 @@
 
 .contact-check{
   font: Regular 16px/26px Yu Gothic;
+  // font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
@@ -127,13 +131,25 @@
     opacity: 1;
     width: 261px;
     height: 56px;
+    
+    &:hover{
+      opacity: 0.8;
+    }
   }
 
   a{
     font: Bold 22px/36px Yu Gothic;
+    // font-size: 22px;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
+    text-decoration: none; //下線
+
+    &:hover{
+      color: #FFFFFF;
+      text-decoration: none; //下線
+    }
+
   }
 }
 
@@ -177,4 +193,9 @@
 
 .contact-area-right{
   height: 100%;
+}
+
+.check-pribacy{
+  @extend .check-test;
+
 }

@@ -55,14 +55,14 @@
 }
 
 .map-left {
-  font: 16px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 0.5;
 }
 
 .map-light {
-  font: 16px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 0.5;
@@ -82,9 +82,19 @@
   opacity: 1;
 }
 
+.map-btn button:hover {
+  opacity: 0.8;
+}
+
 .map-btn a {
-  font: Bold 20px/32px Yu Gothic;
+  font-size: 20px;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
+  text-decoration: none;
+}
+
+.map-btn a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
 }

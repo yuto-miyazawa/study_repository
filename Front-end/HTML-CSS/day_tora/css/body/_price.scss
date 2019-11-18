@@ -77,7 +77,8 @@ table{
 .ro{
   width: 160px;
   background: #999999;
-  font: Bold 16px/26px Yu Gothic;
+  // font: Bold 16px/26px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
@@ -86,7 +87,8 @@ table{
 
 .co{
   background: #999999;
-  font: Bold 16px/26px Yu Gothic;
+  // font: Bold 16px/26px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
@@ -96,7 +98,8 @@ table{
 .tx{
   background: #FFFFFF;
   text-align: right;
-  font: Regular 16px/26px Yu Gothic;
+  // font: Regular 16px/26px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
@@ -105,7 +108,8 @@ table{
 .price-text{
   padding-top: 30px;
   text-align: left;
-  font: Regular 16px/26px Yu Gothic;
+  // font: Regular 16px/26px Yu Gothic;
+  font-size: 16px;
   letter-spacing: 0;
   color: #333333;
   opacity: 1;
