@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap");
 body {
   font-family: "Lato", "Noto Sans JP", sans-serif !important;
+  max-width: 1350px;
 }
 
 .header-bg {
@@ -87,7 +88,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .main-img h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -121,12 +122,24 @@ body {
 }
 
 .maintext {
-  width: 100%;
-  max-width: 100%;
   position: absolute;
   top: 249px;
+  left: 309px;
   z-index: 1;
   color: white;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1179px) {
+  .maintext {
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .maintext {
+    left: 30px;
+  }
 }
 
 .card-sec {

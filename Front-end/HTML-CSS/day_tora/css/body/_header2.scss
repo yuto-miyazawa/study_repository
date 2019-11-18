@@ -102,7 +102,7 @@ color: #333333;
 opacity: 1;
 
 @include mq('sp') {
-  font-size: 55px;
+  font-size: 50px;
 }
 }
 
@@ -150,12 +150,25 @@ color: #FFFFFF;
 }
 
 .maintext{
-  width: 100%;
-  max-width: 100%;
+  // width: 100%;
   position: absolute;
   top:249px;
+  left:309px;
   z-index: 1;
   color: white;
+  margin: 0 auto;
   // text-transform: uppercase;
   // font-family: 'Playfair Display', serif;
+
+  @include mq('tab'){
+    // max-width:100%;
+    left:150px;
+  }
+
+  @include mq('sp'){
+    // max-width:100%;
+    left:30px;
+  }
+
+  
 }
