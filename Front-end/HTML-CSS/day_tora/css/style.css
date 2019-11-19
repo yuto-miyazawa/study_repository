@@ -5,6 +5,11 @@ body {
   max-width: 1350px;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
 .header-bg {
   top: 0px;
   left: 0px;
@@ -75,50 +80,18 @@ body {
   opacity: 1;
   backdrop-filter: blur(undefined);
   -we-webkit-backdrop-filter: blur(undefined) bkit-backdrop-fil;
-  background: transparent url("../img/mainvisual.png") no-repeat center center/cover;
+  background: transparent url("../img/mainvisual.png") center center/cover;
 }
 
-.main-img h1 {
-  font-size: 68px;
-  font-weight: bold;
-  letter-spacing: 0;
-  color: #333333;
+.main-img2 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 700px;
   opacity: 1;
-}
-
-@media screen and (max-width: 767px) {
-  .main-img h1 {
-    font-size: 50px;
-  }
-}
-
-.main-img h2 {
-  font-size: 38px;
-  letter-spacing: 0;
-  color: #333333;
-  opacity: 1;
-}
-
-.main-img button {
-  background: #3F51B5 0% 0% no-repeat padding-box;
-  border-radius: 12px;
-  opacity: 1;
-  font-size: 38px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-
-.main-img button a {
-  opacity: 1;
-  font-size: 38px;
-  letter-spacing: 0;
-  color: #FFFFFF;
-}
-
-@media screen and (max-width: 767px) {
-  .main-img button a {
-    font-size: 28px;
-  }
+  backdrop-filter: blur(undefined);
+  -we-webkit-backdrop-filter: blur(undefined) bkit-backdrop-fil;
+  background: transparent url("../img/logo.png") no-repeat center center/cover;
 }
 
 .maintext {
@@ -140,6 +113,62 @@ body {
   .maintext {
     left: 30px;
   }
+}
+
+.maintext h1 {
+  font-size: 68px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .maintext h1 {
+    font-size: 50px;
+  }
+}
+
+.maintext h2 {
+  font-size: 38px;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+}
+
+.maintext button {
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  font-size: 38px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+.maintext button a {
+  opacity: 1;
+  font-size: 38px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .maintext button a {
+    font-size: 28px;
+  }
+}
+
+.swiper-container .swiper-slide {
+  position: relative;
+}
+
+.swiper-container .swiper-slide .swiper-slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 3s ease 0s;
 }
 
 .card-sec {

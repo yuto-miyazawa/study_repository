@@ -13,10 +13,15 @@
   <!-- google font -->
   <!-- https://fonts.google.com -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="swiper/swiper.css">
+
+  <!-- wow -->
+  <link rel="stylesheet" href="wow/animate.css">
 </head>
 
 <body>
-
 <!-- nav section -->
 <nav class="navbar navbar-expand-lg header-bg navbar-dark sticky-top">
     <div class="container-fluid">
@@ -48,22 +53,36 @@
   
 
   <!-- main visual -->
-  <div class="main-img text-center">
-    <div class="maintext">
+  <div class="main-img">
+    <div class="maintext text-center">
       <h1>一番伝えたいことを書く</h1>
       <h2>リードリード</h2>
       <button type="button" class="btn"><a href="#">お問い合わせ</a></button>
     </div>
   </div>
+
+<!-- wriper -->
+<!-- <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/mainvisual.png" alt="Swiper01"></div>
+    <div class="swiper-slide"><img src="img/cafe2.png" alt="Swiper02"></div>
+    <div class="swiper-slide"><img src="img/cafe3.png" alt="Swiper03"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div> -->
   
+
+
 <!-- card section -->
 <section class="card-sec">
-  <div class="topic-title text-center">
+  <div class="topic-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <h1>Card</h1>
     <hr>
   </div>
 
-  <div class="card-items">
+  <div class="card-items  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="item">
       <div class="item-img"></div>
       <div class="item-text mt-5">
@@ -112,12 +131,12 @@
 
 <!-- news section -->
 <section class="news">
-    <div class="topic-title text-center">
+    <div class="topic-title text-center  wow fadeInUp ">
         <h1>News</h1>
         <hr>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
       <div class="row news-border">
         <div class="news-left col-lg-4">
           <time datetime="2018-01-17">2018-01-17</time>
@@ -173,12 +192,12 @@
 
   <!-- Price section -->
 <section class="price">
-  <div class="topic-title text-center">
+  <div class="topic-title text-center  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <h1>Price</h1>
     <hr>
   </div>
 
-  <div class="price-item">
+  <div class="price-item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
       <div class="price-left">
         <img src="img/price-img.png" alt="">
       </div>
@@ -224,16 +243,16 @@
 
 <!-- map secction -->
 <section class="map">
-  <div class="topic-title text-center">
+  <div class="topic-title text-center  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
       <h1>Access</h1>
       <hr>
   </div>
 
-  <div class="map-wrap">
+  <div class="map-wrap  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3004082608213!2d139.7657488517853!3d35.66960438009978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e8b565e11fc118!2z5q2M6Iie5LyO5bqn!5e0!3m2!1sja!2sjp!4v1573794384867!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>
 
-  <div class="map-text">
+  <div class="map-text  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="map-left">
       <p>住所</p>
     </div>
@@ -242,7 +261,7 @@
     </div>
   </div>
 
-  <div class="map-text">
+  <div class="map-text  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="map-left">
       <p>アクセス</p>
     </div>
@@ -251,7 +270,7 @@
     </div>
   </div>
 
-  <div class="map-btn">
+  <div class="map-btn  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <button type="button" class="btn"><a href="#">Googleマップで見る ></a></button>
   </div>
   </section>
@@ -259,12 +278,12 @@
 
 <!-- contact section -->
 <section class="contact">
-  <div class="topic-title text-center">
+  <div class="topic-title text-center  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <h1>Contact</h1>
     <hr>
   </div>
 
-  <div class="contact-sec pt-5 px-5 pb-3">
+  <div class="contact-sec pt-5 px-5 pb-3  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="contact-row">
       <div class="contact-left contact-in">
         <div class="contact-in-left">
@@ -385,5 +404,41 @@
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- swiper init -->
+<script src="swiper/swiper.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      // ここからオプション
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+</script>
+
+
+<!-- wow init -->
+<script src="wow/dist/wow.min.js"></script>
+
+<!-- 初期化 -->
+<script>
+    new WOW().init();
+</script>
+
+<!-- スクロールするたびに実行
+<script>
+  $(window).scroll(function(){
+    new WOW().init();
+  });
+</script> -->
+
 </body>
 </html>

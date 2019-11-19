@@ -9,3 +9,6 @@ https://haniwaman.com/css-btn/
 
 // table
 https://webliker.info/02035/
+
+// 画像のトリミング
+http://neutralx0.net/tool/img.html
