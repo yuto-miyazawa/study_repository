@@ -49,6 +49,10 @@
   border-bottom: solid 3px red;
 }
 
+.clickred {
+  border-bottom: solid 3px red;
+}
+
 .nav-link {
   font: Regular 16px/26px Yu Gothic;
   letter-spacing: 0;

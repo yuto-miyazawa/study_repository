@@ -1,0 +1,66 @@
+// import
+@import "setting";
+@import "maxin";
+
+.qa{
+  padding-left: 231px;
+  padding-right: 231px;
+  
+  @include mq('sp'){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include mq('tab'){
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.qa-title{
+  width: 100%;
+  display: flex;
+  background: skyblue;
+  justify-content: space-between;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  padding-top: 18px;
+  height:60px;
+
+  p{
+    // font: Regular 18px/29px Yu Gothic;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+  h2{
+    font-size: 40px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+}
+
+.qa-answer{
+  width:100%;
+  padding-left: 27px;
+  padding-right: 27px;
+  border: 1px solid #3F51B5;
+
+  p{
+    // font: Regular 18px/29px Yu Gothic;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #3F51B5;
+    opacity: 0.8;
+    font-weight: lighter;
+    line-height: 30px;
+  }
+
+}

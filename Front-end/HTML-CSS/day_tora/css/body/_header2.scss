@@ -59,6 +59,10 @@
   }
 }
 
+.clickred{
+  border-bottom: solid 3px red;
+}
+
 .nav-link{
   // top: 40px;
   // left: 882px;
@@ -69,6 +73,7 @@
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
+
 
 
   &:hover{
