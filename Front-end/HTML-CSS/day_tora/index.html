@@ -354,10 +354,12 @@
     </div>
 
     <div class="contact-check pt-5">
-        <label>
+        <!-- <label>
           <input type="checkbox" class="check-pribacy">
           <a href="#">プライバシーポリシー</a>に合意する
-        </label>
+        </label> -->
+        <input type="checkbox" class="check-pribacy">
+        <label id="modal-open" for="modal-checkbox"><span style="color:blue">プライバシーポリシー</span>に合意する</label>
     </div>
 
     <div class="contact-btn">
@@ -365,6 +367,20 @@
     </div>
   </div>
   </section>
+
+<!-- modal window section -->
+<input id="modal-checkbox" type="checkbox">
+<!-- <label id="modal-open" for="modal-checkbox">モーダルを開く</label> -->
+<label id="modal-close" for="modal-checkbox"></label>
+<div id="modal-content">
+  <p>ここがモーダルとして表示される部分です。</p>
+  <p>aaaaa</p>
+  <p>aaaaaa</p>
+  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  <label id="modal-close-a" for="modal-checkbox">閉じる</label>
+</div>
+
+
 
 <!-- q & a section -->
 <section class="qa" id="qa">

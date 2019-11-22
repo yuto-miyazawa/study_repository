@@ -197,5 +197,7 @@
 
 .check-pribacy{
   @extend .check-test;
-
+  display: inline;
+  max-width: 20px;
+  max-height: 20px;
 }

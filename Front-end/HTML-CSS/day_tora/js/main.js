@@ -31,3 +31,5 @@ $(function(){
     $(this).parent().parent().find('.qa-answer').slideToggle();
 });
 });
+
+

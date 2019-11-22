@@ -6,14 +6,14 @@
   padding-left: 231px;
   padding-right: 231px;
   
-  @include mq('sp'){
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
+  
   @include mq('tab'){
     padding-left: 100px;
     padding-right: 100px;
+  }
+  @include mq('sp'){
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -63,4 +63,9 @@
     line-height: 30px;
   }
 
+}
+
+.qa-sec{
+  width: 100%;
+  height:100%
 }

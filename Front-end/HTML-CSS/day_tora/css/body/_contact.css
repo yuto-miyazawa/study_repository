@@ -376,3 +376,9 @@
 .contact-area-right {
   height: 100%;
 }
+
+.check-pribacy {
+  display: inline;
+  max-width: 20px;
+  max-height: 20px;
+}
