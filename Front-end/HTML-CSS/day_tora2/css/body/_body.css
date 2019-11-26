@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html {
+  width: 1366px;
+}
+
+body {
+  font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif !important;
+  background: #F3F3F3 0% 0% no-repeat padding-box;
+}
