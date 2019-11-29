@@ -36,6 +36,7 @@
 .service-row{
   width: 231px;
   height: 211px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
 
   h3{
     letter-spacing: 4px;
@@ -57,5 +58,7 @@
 
 .service-out{
   width: 100%;
-  height:133px
+  height:133px;
+  // background: #F3F3F3 0% 0% no-repeat padding-box;
 }
+

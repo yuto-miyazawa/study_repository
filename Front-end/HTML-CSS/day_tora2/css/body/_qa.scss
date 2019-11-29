@@ -1,0 +1,19 @@
+// import
+@import "setting";
+@import "maxin";
+
+.qa-sec{
+  widows: 100%;
+  height: 1065px;
+  background: transparent url('../img/sunyu-kim-1053375-unsplash.png') 0% 0% no-repeat padding-box;
+  padding-top: 80px;
+}
+
+.qa-title{
+  text-align: center;
+  h1{
+    color: #3E3E3E;
+    font-size: 36px;
+    font-weight: bold;
+  }
+}

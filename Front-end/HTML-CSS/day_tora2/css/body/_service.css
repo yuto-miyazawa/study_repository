@@ -32,6 +32,7 @@
 .service-row {
   width: 231px;
   height: 211px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
 .service-row h3 {
