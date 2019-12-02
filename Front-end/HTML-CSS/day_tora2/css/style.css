@@ -360,6 +360,7 @@ body {
   height: 1065px;
   background: transparent url("../img/sunyu-kim-1053375-unsplash.png") 0% 0% no-repeat padding-box;
   padding-top: 80px;
+  position: relative;
 }
 
 .qa-title {
@@ -370,4 +371,159 @@ body {
   color: #3E3E3E;
   font-size: 36px;
   font-weight: bold;
+}
+
+.qa-in {
+  width: 616px;
+  height: 770px;
+  position: absolute;
+  top: 215px;
+  left: 658px;
+}
+
+.qa-col {
+  width: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  opacity: 1;
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 40px;
+}
+
+.qa-ansewr {
+  background: rgba(57, 99, 235, 0.2) 0% 0% no-repeat padding-box;
+  height: 80px;
+  border-radius: 7px;
+  opacity: 1;
+  margin-top: 21px;
+  padding: 18px 14px;
+}
+
+.qa-ansewr p {
+  color: #3E3E3E;
+  opacity: 1;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.qa-col-in {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qa-col-left span {
+  background: #3B69FF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.qa-col-left h3 {
+  display: inline;
+  letter-spacing: 0.4px;
+  color: #3E3E3E;
+  opacity: 1;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.qa-touch {
+  cursor: pointer;
+}
+
+.map-sec {
+  width: 100%;
+  height: 775px;
+  background: #F3F3F3 0% 0% no-repeat padding-box;
+  position: relative;
+}
+
+.map-black {
+  width: 980px;
+  height: 569px;
+  background: #3E3E3E 0% 0% no-repeat padding-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.map-map {
+  width: 720px;
+  height: 515px;
+  position: absolute;
+  top: 130px;
+  left: 554px;
+  z-index: 20;
+}
+
+.map-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 71%;
+  /* = height ÷ width × 100 */
+  margin-bottom: 25px;
+}
+
+.map-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-text {
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 30;
+  width: 326px;
+  top: 130px;
+  left: 93px;
+}
+
+.map-text h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.map-text p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.map-btn {
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  height: 64px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.contact-sec {
+  height: 1216px;
+  width: 100%;
+  background: transparent url("../img/alex-blajan-159378-unsplash.png") 0% 0% no-repeat padding-box;
+  padding: 80px 203px;
+}
+
+.contact-pic {
+  width: 100%;
+  height: 200px;
+  background: transparent url("../img/contact1.png") 0% 0% no-repeat padding-box;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.contact-col {
+  width: 100%;
+  height: 855px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
 }

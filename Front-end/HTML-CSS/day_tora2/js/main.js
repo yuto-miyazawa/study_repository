@@ -10,3 +10,19 @@ $(function(){
   });
 });
 
+// アコーディオン
+$(function(){
+  $('.qa-ansewr').hide();
+ });
+ 
+//  $(function(){
+//    $('.qa-col-right img').click(function(){
+//      $(this).parent().parent().find('.qa-ansewr').slideToggle();
+//  });
+//  });
+ $(function(){
+   $('.qa-touch').click(function(){
+    $(this).parent().parent().parent().find('.qa-ansewr').slideToggle();
+ });
+ });
+
