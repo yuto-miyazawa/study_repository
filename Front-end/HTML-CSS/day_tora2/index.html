@@ -318,18 +318,62 @@
 
 <!-- contact section -->
 <section class="contact-sec">
-  <div class="contact-pic">
-  </div>
+  <div class="contact-pic"></div>
 
   <div class="contact-col">
 
-    <form action="">
+    <form action="" class="contact-form">
+
+      <div class="contact-select">
+        <span class="span-h4">お問い合わせ種別</span >
+        <select class="select-contact">
+          <option hidden>お問い合わせ</option>
+          <option>セレクトA</option>
+          <option>セレクトB</option>
+          <option>セレクトC</option>
+        </select>
+      </div>
+
+      <div class="contact-name">
+          <span class="span-h4">氏名</span >
+          <div class="lv">
+            <span class="span-h3">必須</span>
+          </div>
+          <input class="text-contact" type="text" placeholder="氏名">
+      </div>
+      <div class="contact-kana">
+          <span class="span-h4">フリガナ</span >
+          <div class="lv">
+            <span class="span-h3">必須</span>
+          </div>
+          <input class="text-contact" type="text" placeholder="フリガナ">
+      </div>
+      <div class="contact-adress">
+          <span class="span-h4">アドレス</span >
+          <input class="text-contact" type="text" placeholder="sample.gmail.com">
+      </div>
+
+      <div class="contact-sex">
+          <span class="span-h4">性別</span >
+          <label><input class="radio-contact" type="radio" name="radio-name" ><span class="uni"  style="margin-right:60px">男性</span></label>
+          <label><input class="radio-contact" type="radio" name="radio-name"><span class="uni">女性</span></label>
+        </div>
       
+        <div class="contact-message mb-3">
+          <span class="span-h4 mb-2">メッセージ</span >
+          <textarea class="textarea-contact" placeholder="お問い合わせ内容"></textarea>
+        </div>
+
+        <div class="contact-check mb-3">
+          <input type="checkbox" class="check-pribacy mr-2">
+          <label id="modal-open" for="modal-checkbox">個人情報保護方針に同意する</label>
+        </div>
+
+        <div class="contact-btn">
+            <button type="button" class="btn"><a href="#">送信する</a></button>
+        </div>      
     </form>
-
   </div>
-
-
 </section>
 
 
