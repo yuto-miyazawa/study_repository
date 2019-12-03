@@ -148,6 +148,64 @@
 <!-- はみ出した分の制御 -->
 <div class="service-out"></div>
 
+<!-- slide section -->
+<section class="slide-sec">
+  <div class="slide-black">
+
+    <h2>Results</h2>
+
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-pic">
+                <h4>とにかく人の世は住みにくい</h4>
+                <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+              </div>           
+            </div>
+
+
+              <div class="swiper-slide">
+                <div class="slide-pic">
+                  <h4>とにかく人の世は住みにくい</h4>
+                  <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>           
+              </div>
+        
+
+
+              <div class="swiper-slide">
+                <div class="slide-pic">
+                  <h4>とにかく人の世は住みにくい</h4>
+                  <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>           
+              </div>
+         
+
+
+            <div class="swiper-slide">
+                <div class="slide-pic">
+                  <h4>とにかく人の世は住みにくい</h4>
+                  <p>どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</p>
+                </div>           
+              </div>
+              </div>
+       
+          <!-- Add Pagination -->
+          <div class="swiper-pagination mt-5"></div>
+          <!-- Add Arrows -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
+
+
+        <div class="slide-btn">
+          VIEW ALL
+        </div>
+
+  </div>
+
+</section>
+
 
 <!-- price section -->
 <section class="price-sec">
@@ -377,6 +435,33 @@
 </section>
 
 
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="fab-sec">
+        <a href="#"><i class="fab fa-twitter mr-3"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      
+      <a href="#" class="footer-link link1">サイトマップ</a>
+      <a href="#" class="footer-link link2">個人情報保護方針</a>
+      <a href="#" class="footer-link link3">プライバシーポリシー</a>
+    </div>
+    
+    <div class="footer-right">
+      <h2>HANIWAMAN Corp.</h2>
+      <span>© Haniwaman Landing page Sample.</span>
+    </div>
+  </div>
+
+  <p class="pagetop">
+      <a href="#" title="ページトップに戻る">
+      <img src="img/totop.svg" alt=""></a>
+    </p>
+
+</footer>
+
+
 <!-- my csutom -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
@@ -417,5 +502,49 @@
     new WOW().init();
   });
 </script> -->
+
+
+
+<script>
+    var appendNumber = 4;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      // centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+        ]);
+    });
+    document.querySelector('.prepend-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    });
+    document.querySelector('.append-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+    });
+    document.querySelector('.append-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+        ]);
+    });
+
+  </script>
+
 </body>
 </html>
